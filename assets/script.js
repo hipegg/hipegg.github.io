@@ -24,7 +24,7 @@
         id: 3,
         name: "nezay",
         image: "assets/profiles/nezay.png",
-        bio: "soninho bobo",
+        bio: "🔪",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/187902749113974785" },
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
