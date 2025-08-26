@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ꮴ</title>
+  <meta name="description" content="Bio">
+  <link rel="icon" href="caveira.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta property="og:title" content="Ꮴ - Sobre Pessoas">
+  <meta property="og:description" content="Perfil de um monte de fracassado">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/path-to-image.jpg">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      background: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 0.05em 0 0 rgba(255,0,0,0.75), -0.05em -0.025em 0 rgba(0,255,0,0.75), -0.025em 0.05em 0 rgba(0,0,255,0.75); }
+      14% { text-shadow: 0.05em 0 0 rgba(255,0,0,0.75), -0.05em -0.025em 0 rgba(0,255,0,0.75), -0.025em 0.05em 0 rgba(0,0,255,0.75); }
+      15% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.75), 0.025em 0.025em 0 rgba(0,255,0,0.75), -0.05em -0.05em 0 rgba(0,0,255,0.75); }
+      49% { text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.75), 0.025em 0.025em 0 rgba(0,255,0,0.75), -0.05em -0.05em 0 rgba(0,0,255,0.75); }
+      50% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75), 0.05em 0 0 rgba(0,255,0,0.75), 0 -0.05em 0 rgba(0,0,255,0.75); }
+      99% { text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75), 0.05em 0 0 rgba(0,255,0,0.75), 0 -0.05em 0 rgba(0,0,255,0.75); }
+      100% { text-shadow: -0.025em 0 0 rgba(255,0,0,0.75), -0.025em -0.025em 0 rgba(0,255,0,0.75), -0.025em -0.05em 0 rgba(0,0,255,0.75); }
+    }
+
+    #confirmacao, #site {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1;
+      text-align: center;
+      position: relative;
+    }
+
+    #confirmacao {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    #confirmacao h1 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-shadow: 0 0 10px rgba(255,255,255,0.5);
+      animation: glitch 2s infinite alternate;
+    }
+
+    #confirmacao button {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 12px 30px;
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 30px;
+      margin: 10px;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      outline: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #confirmacao button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+
+    #confirmacao button:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255,255,255,0.5);
+    }
+
+    #confirmacao button:hover::before {
+      left: 100%;
+    }
+
+    #site {
+      display: none;
+      padding: 50px 20px;
+      opacity: 0;
+      animation: fadeIn 1s forwards 0.5s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cards-wrapper {
+      padding-bottom: 50px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      perspective: 1000px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+      padding: 25px;
+      border-radius: 20px;
+      width: 300px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      transform-style: preserve-3d;
+    }
+
+    .inspect-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255,255,255,0.2);
+      border: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      z-index: 2;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+    }
+
+    .card:hover .inspect-btn {
+      opacity: 1;
+    }
+
+    .inspect-btn:hover {
+      background: rgba(255,255,255,0.4);
+      transform: rotate(90deg) scale(1.1);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+      );
+      transform: rotate(30deg);
+      pointer-events: none;
+      transition: all 0.6s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05) rotateY(5deg) rotateX(5deg);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .card:hover::before {
+      transform: rotate(45deg) translate(10%, 10%);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+      margin-bottom: 20px;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      filter: grayscale(30%);
+    }
+
+    .card img.loading {
+      background: linear-gradient(90deg, #222, #333, #222);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+    }
+
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    .card:hover img {
+      transform: rotate(5deg) scale(1.1);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+      filter: grayscale(0%);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 15px 0 8px;
+      position: relative;
+      display: inline-block;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.4s ease;
+    }
+
+    .card:hover h2::after {
+      width: 80%;
+    }
+
+    .estrela {
+      color: #fff;
+      font-size: 20px;
+      margin-left: 6px;
+      vertical-align: middle;
+      animation: pulse 2s infinite, float 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.3); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.7; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    p {
+      font-size: 16px;
+      color: #bbb;
+      margin-bottom: 20px;
+      transition: all 0.4s ease;
+      line-height: 1.5;
+    }
+
+    .card:hover p {
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .icons a {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 12px;
+      font-size: 20px;
+      border-radius: 50%;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .icons a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: 0.5s;
+    }
+
+    .icons a:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.2) translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+    }
+
+    .icons a:hover::before {
+      left: 100%;
+    }
+
+    .icons a:hover i {
+      animation: fire 0.5s ease-out;
+    }
+
+    @keyframes fire {
+      0% { text-shadow: 0 0 0 #fff; }
+      50% { text-shadow: 0 0 10px #fff, 0 0 20px #fff; }
+      100% { text-shadow: 0 0 0 #fff; }
+    }
+
+    .audio-controls {
+      position: fixed;
+      bottom: 30px;
+      right: 100px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 101;
+      background: rgba(0,0,0,0.7);
+      padding: 10px 15px;
+      border-radius: 30px;
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+    }
+
+    .audio-controls:hover {
+      background: rgba(0,0,0,0.8);
+    }
+
+    .volume-slider {
+      width: 80px;
+      height: 5px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: rgba(255,255,255,0.2);
+      border-radius: 5px;
+      outline: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .audio-controls:hover .volume-slider {
+      opacity: 1;
+    }
+
+    .volume-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: white;
+      cursor: pointer;
+    }
+
+    .audio-btn {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .audio-btn:hover {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.1);
+    }
+
+    audio {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #888;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    }
+
+    footer p {
+      margin: 8px 0;
+      color: #888;
+      transition: all 0.3s ease;
+    }
+
+    footer:hover p {
+      color: #ccc;
+      transform: translateY(-2px);
+    }
+
+    .loader {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .loader.active {
+      display: flex;
+    }
+
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      position: relative;
+    }
+
+    .spinner::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border: 5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      border-top-color: rgba(255,255,255,0.5);
+      animation: spin 1.5s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loader p {
+      margin-top: 20px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      animation: pulseText 2s infinite;
+    }
+
+    @keyframes pulseText {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.2);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 100;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+    }
+
+    .back-to-top i {
+      transition: transform 0.3s ease;
+    }
+
+    .back-to-top:hover i {
+      transform: translateY(-3px);
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      font-size: 12px;
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(5px);
+    }
+
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgba(0,0,0,0.7) transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(-50%) translateY(-5px);
+    }
+
+    .typing-effect {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+      border-right: .15em solid white;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white }
+    }
+
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+      pointer-events: none;
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
+    .zoom-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-out;
+    }
+
+    .zoomed-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      position: relative;
+    }
+
+    .zoomed-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+      margin-bottom: 25px;
+    }
+
+    /* Globo 3D Estilos */
+    .galaxy-viewer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 2000;
+      display: none;
+      overflow: hidden;
+      cursor: grab;
+    }
+
+    .galaxy-viewer.grabbing {
+      cursor: grabbing;
+    }
+
+    .galaxy-scene {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      perspective: 1200px;
+      transform-style: preserve-3d;
+    }
+
+    .galaxy-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .globe-sphere {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1), rgba(0,0,0,0));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 60px rgba(100, 150, 255, 0.2);
+      transform: translate3d(-50%, -50%, 0);
+      top: 50%;
+      left: 50%;
+      transform-style: preserve-3d;
+    }
+
+    .profile-point {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transform-style: preserve-3d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .profile-point img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(30%);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .profile-point:hover {
+      transform: scale(1.3);
+      z-index: 10;
+    }
+
+    .profile-point:hover img {
+      filter: grayscale(0%);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+
+    .galaxy-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    .galaxy-close:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: rotate(90deg);
+    }
+
+    .galaxy-controls {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 15px;
+      z-index: 100;
+    }
+
+    .galaxy-control-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .galaxy-control-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
+    }
+
+    .admin-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 3001;
+      transition: all 0.3s ease;
+    }
+
+    .admin-toggle:hover {
+      background: rgba(255, 0, 0, 0.9);
+      transform: scale(1.1);
+    }
+
+    .admin-toggle.unlocked {
+      background: rgba(0, 255, 0, 0.7);
+    }
+
+    .admin-toggle.unlocked:hover {
+      background: rgba(0, 255, 0, 0.9);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .container {
+        gap: 20px;
+      }
+
+      .card {
+        width: 280px;
+        padding: 20px;
+      }
+
+      .card img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .zoomed-card {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .zoomed-card img {
+        width: 120px !important;
+        height: 120px !important;
+      }
+
+      .audio-controls {
+        right: 20px;
+        bottom: 90px;
+      }
+
+      .globe-sphere {
+        width: 250px;
+        height: 250px;
+      }
+
+      .profile-point {
+        width: 70px;
+        height: 70px;
+      }
+
+      .profile-point img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .admin-panel {
+        width: 90%;
+        right: -90%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #confirmacao h1 {
+        font-size: 1.5rem;
+      }
+
+      #confirmacao button {
+        padding: 10px 25px;
+        font-size: 20px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 20px;
+      }
+
+      .icons a {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 20px 15px;
+      }
+
+      .back-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .zoomed-card {
+        width: 95%;
+        padding: 15px;
+      }
+
+      .audio-controls {
+        padding: 8px 12px;
+        right: 15px;
+      }
+
+      .volume-slider {
+        width: 60px;
+      }
+
+      .globe-sphere {
+        width: 200px;
+        height: 200px;
+      }
+
+      .profile-point {
+        width: 60px;
+        height: 60px;
+      }
+
+      .profile-point img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body oncontextmenu="return false">
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+    <p>CARREGANDO...</p>
+  </div>
+
+  <section id="confirmacao">
+    <h1 class="typing-effect">BEM-VINDO</h1>
+    <button onclick="entrar()" id="enterBtn" aria-label="Entrar no site">ENTRAR</button>
+    <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;"></p>
+  </section>
+
+  <main id="site">
+    <audio id="audio" loop src="musica.mp3"></audio>
+    <div class="audio-controls" id="audioControls" style="display: none;">
+      <button class="audio-btn" id="playPauseBtn" aria-label="Play/Pause música">
+        <i class="fas fa-play"></i>
+      </button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5" class="volume-slider" id="volumeSlider" aria-label="Controle de volume">
+    </div>
+    
+    <section class="cards-wrapper">
+      <div class="container" id="profilesContainer">
+        <!-- Perfis serão carregados dinamicamente aqui -->
+      </div>
+    </section>
+
+    <button class="galaxy-view-btn" onclick="openGalaxyViewer()">
+      <i class="fas fa-globe"></i> Visualização 3D
+    </button>
+
+    <footer>
+      <p>Site criado por t4fz</p>
+      <p>Site em construção... em breve terá atualizações.</p>
+    </footer>
+  </main>
+
+  <!-- 3D Globe Viewer -->
+  <div class="galaxy-viewer" id="galaxyViewer">
+    <div class="galaxy-scene" id="galaxyScene">
+      <div class="galaxy-container" id="galaxyContainer">
+        <div class="globe-sphere" id="globeSphere"></div>
+      </div>
+    </div>
+    <div class="galaxy-close" onclick="closeGalaxyViewer()">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="galaxy-controls">
+      <button class="galaxy-control-btn" onclick="toggleAutoRotation()">
+        <i class="fas fa-sync-alt"></i>
+      </button>
+      <button class="galaxy-control-btn" onclick="resetGlobeRotation()">
+        <i class="fas fa-crosshairs"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script>
+    // Sistema de Administração
+    const ADMIN_PASSWORD = "supremo123"; // Senha do admin (pode ser alterada)
+    let isAdmin = false;
+    let profiles = JSON.parse(localStorage.getItem('profiles')) || [
+      {
+        id: 1,
+        name: "t4fz",
+        image: "tafz.png",
+        bio: "oi, sou t4",
+        links: [
+          { type: "instagram", icon: "fab fa-instagram", url: "https://instagram.com/0llaw1" },
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i6w" }
+        ]
+      },
+      {
+        id: 2,
+        name: "9",
+        image: "chapado.png",
+        bio: "Y + P 💝",
+        links: [
+          { type: "instagram", icon: "fab fa-instagram", url: "https://instagram.com/j.pedroozl" },
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/joojjpedrooz" }
+        ]
+      },
+      {
+        id: 3,
+        name: "nezay",
+        image: "nezay.png",
+        bio: "soninho bobo",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/187902749113974785" },
+          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
+        ]
+      }
+    ];
+
+    // Variáveis para o globo 3D
+    let globeRotation = { x: 0, y: 0 };
+    let isDragging = false;
+    let startPos = { x: 0, y: 0 };
+    let currentPos = { x: 0, y: 0 };
+    let autoRotateInterval;
+    let isAutoRotating = false;
+
+    // Inicialização
+    document.addEventListener('DOMContentLoaded', function() {
+      updateProfileCards();
+      setupAdminPanel();
+      setupGlobeInteractions();
+      setupAudioControls();
+      setupBackToTop();
+      setupRippleEffect();
+      setupKeyboardBlock();
+      setupParallaxEffect();
+    });
+
+    // Funções do sistema de administração
+    function setupAdminPanel() {
+      const adminToggle = document.getElementById('adminToggle');
+      const adminPanel = document.getElementById('adminPanel');
+      const loginBtn = document.getElementById('loginBtn');
+      const adminPassword = document.getElementById('adminPassword');
+      const addSocialBtn = document.getElementById('addSocialBtn');
+      const saveProfileBtn = document.getElementById('saveProfileBtn');
+      const cancelEditBtn = document.getElementById('cancelEditBtn');
+
+      adminToggle.addEventListener('click', function() {
+        adminPanel.classList.toggle('active');
+      });
+
+      loginBtn.addEventListener('click', function() {
+        if (adminPassword.value === ADMIN_PASSWORD) {
+          isAdmin = true;
+          document.getElementById('loginForm').style.display = 'none';
+          document.getElementById('adminContent').style.display = 'block';
+          adminToggle.innerHTML = '<i class="fas fa-unlock"></i>';
+          adminToggle.classList.add('unlocked');
+          loadProfilesList();
+          adminPassword.value = '';
+        } else {
+          alert('Senha incorreta!');
+        }
+      });
+
+      addSocialBtn.addEventListener('click', function() {
+        addSocialLinkField();
+      });
+
+      saveProfileBtn.addEventListener('click', function() {
+        saveProfile();
+      });
+
+      cancelEditBtn.addEventListener('click', function() {
+        resetProfileForm();
+      });
+    }
+
+    function loadProfilesList() {
+      const profilesList = document.getElementById('profilesList');
+      profilesList.innerHTML = '';
+
+      if (profiles.length === 0) {
+        profilesList.innerHTML = '<p>Nenhum perfil cadastrado ainda.</p>';
+        return;
+      }
+
+      profiles.forEach(profile => {
+        const profileItem = document.createElement('div');
+        profileItem.className = 'profile-item';
+        profileItem.innerHTML = `
+          <h5>${profile.name}</h5>
+          <p>${profile.bio}</p>
+          <div class="profile-actions">
+            <button class="edit-btn" onclick="editProfile(${profile.id})">Editar</button>
+            <button class="delete-btn" onclick="deleteProfile(${profile.id})">Excluir</button>
+          </div>
+        `;
+        profilesList.appendChild(profileItem);
+      });
+    }
+
+    function addSocialLinkField(type = 'instagram', url = '') {
+      const container = document.getElementById('socialLinksContainer');
+      const div = document.createElement('div');
+      div.className = 'social-link';
+      div.innerHTML = `
+        <select class="social-type">
+          <option value="instagram">Instagram</option>
+          <option value="discord">Discord</option>
+          <option value="lastfm">Last.fm</option>
+          <option value="twitter">Twitter</option>
+          <option value="github">GitHub</option>
+        </select>
+        <input type="text" class="social-url" placeholder="URL" value="${url}">
+        <button class="remove-social-btn"><i class="fas fa-times"></i></button>
+      `;
+      container.appendChild(div);
+
+      div.querySelector('.social-type').value = type;
+      div.querySelector('.remove-social-btn').addEventListener('click', function() {
+        container.removeChild(div);
+      });
+    }
+
+    function saveProfile() {
+      const id = document.getElementById('editProfileId').value;
+      const name = document.getElementById('editProfileName').value.trim();
+      const image = document.getElementById('editProfileImage').value.trim();
+      const bio = document.getElementById('editProfileBio').value.trim();
+
+      if (!name || !image || !bio) {
+        alert('Por favor, preencha pelo menos nome, imagem e biografia!');
+        return;
+      }
+
+      // Coletar links sociais
+      const links = [];
+      document.querySelectorAll('.social-link').forEach(linkEl => {
+        const type = linkEl.querySelector('.social-type').value;
+        const url = linkEl.querySelector('.social-url').value.trim();
+        
+        if (url) {
+          let icon;
+          switch(type) {
+            case 'instagram': icon = 'fab fa-instagram'; break;
+            case 'discord': icon = 'fab fa-discord'; break;
+            case 'lastfm': icon = 'fab fa-lastfm'; break;
+            case 'twitter': icon = 'fab fa-twitter'; break;
+            case 'github': icon = 'fab fa-github'; break;
+            default: icon = 'fas fa-link';
+          }
+          
+          links.push({ type, icon, url });
+        }
+      });
+
+      if (id) {
+        // Editar perfil existente
+        const index = profiles.findIndex(p => p.id == id);
+        if (index !== -1) {
+          profiles[index] = { id: parseInt(id), name, image, bio, links };
+        }
+      } else {
+        // Adicionar novo perfil
+        const newId = profiles.length > 0 ? Math.max(...profiles.map(p => p.id)) + 1 : 1;
+        profiles.push({ id: newId, name, image, bio, links });
+      }
+
+      saveProfiles();
+      resetProfileForm();
+    }
+
+    function editProfile(id) {
+      const profile = profiles.find(p => p.id === id);
+      if (!profile) return;
+
+      document.getElementById('editProfileId').value = profile.id;
+      document.getElementById('editProfileName').value = profile.name;
+      document.getElementById('editProfileImage').value = profile.image;
+      document.getElementById('editProfileBio').value = profile.bio;
+
+      const container = document.getElementById('socialLinksContainer');
+      container.innerHTML = '';
+
+      if (profile.links.length === 0) {
+        addSocialLinkField();
+      } else {
+        profile.links.forEach(link => {
+          addSocialLinkField(link.type, link.url);
+        });
+      }
+
+      document.getElementById('cancelEditBtn').style.display = 'block';
+      document.getElementById('adminPanel').classList.add('active');
+    }
+
+    function deleteProfile(id) {
+      if (confirm('Tem certeza que deseja excluir este perfil?')) {
+        profiles = profiles.filter(p => p.id !== id);
+        saveProfiles();
+      }
+    }
+
+    function resetProfileForm() {
+      document.getElementById('editProfileId').value = '';
+      document.getElementById('editProfileName').value = '';
+      document.getElementById('editProfileImage').value = '';
+      document.getElementById('editProfileBio').value = '';
+      document.getElementById('socialLinksContainer').innerHTML = '';
+      document.getElementById('cancelEditBtn').style.display = 'none';
+      addSocialLinkField();
+    }
+
+    function saveProfiles() {
+      localStorage.setItem('profiles', JSON.stringify(profiles));
+      updateProfileCards();
+      loadProfilesList();
+    }
+
+    // Funções para os perfis e visualização
+    function updateProfileCards() {
+      const container = document.getElementById('profilesContainer');
+      container.innerHTML = '';
+      
+      profiles.forEach(profile => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        
+        card.innerHTML = `
+          <button class="inspect-btn" onclick="zoomCard(this.parentElement)" aria-label="Ampliar perfil">
+            <i class="fas fa-expand"></i>
+          </button>
+          <img src="${profile.image}" alt="Foto de perfil de ${profile.name}" loading="lazy" class="loading" onload="this.classList.remove('loading')" />
+          <h2>${profile.name} <span class="estrela">✧</span></h2>
+          <p>${profile.bio}</p>
+          <div class="icons">
+            ${profile.links.map(link => `
+              <a href="${link.url}" target="_blank" aria-label="${link.type} de ${profile.name}" class="tooltip">
+                <i class="${link.icon}"></i>
+                <span class="tooltiptext">${link.type.charAt(0).toUpperCase() + link.type.slice(1)}</span>
+              </a>
+            `).join('')}
+          </div>
+        `;
+        
+        container.appendChild(card);
+      });
+    }
+
+    // Funções para o globo 3D
+    function setupGlobeInteractions() {
+      const galaxyViewer = document.getElementById('galaxyViewer');
+      const galaxyContainer = document.getElementById('galaxyContainer');
+      
+      // Mouse drag to rotate
+      galaxyViewer.addEventListener('mousedown', (e) => {
+        if (e.button !== 0) return;
+        isDragging = true;
+        galaxyViewer.classList.add('grabbing');
+        startPos = { x: e.clientX, y: e.clientY };
+        stopAutoRotation();
+      });
+      
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        
+        currentPos = { x: e.clientX, y: e.clientY };
+        
+        const deltaX = currentPos.x - startPos.x;
+        const deltaY = currentPos.y - startPos.y;
+        
+        // Sensibilidade de rotação
+        globeRotation.y += deltaX * 0.2;
+        globeRotation.x += deltaY * 0.1;
+        
+        // Limitar rotação vertical
+        globeRotation.x = Math.max(-60, Math.min(60, globeRotation.x));
+        
+        updateGlobeRotation();
+        startPos = { ...currentPos };
+      });
+      
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+        galaxyViewer.classList.remove('grabbing');
+      });
+      
+      // Suporte a touch
+      galaxyViewer.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 1) {
+          isDragging = true;
+          galaxyViewer.classList.add('grabbing');
+          startPos = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+          stopAutoRotation();
+        }
+      });
+      
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging || e.touches.length !== 1) return;
+        
+        currentPos = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+        
+        const deltaX = currentPos.x - startPos.x;
+        const deltaY = currentPos.y - startPos.y;
+        
+        globeRotation.y += deltaX * 0.2;
+        globeRotation.x += deltaY * 0.1;
+        globeRotation.x = Math.max(-60, Math.min(60, globeRotation.x));
+        
+        updateGlobeRotation();
+        startPos = { ...currentPos };
+      });
+      
+      window.addEventListener('touchend', () => {
+        isDragging = false;
+        galaxyViewer.classList.remove('grabbing');
+      });
+    }
+
+    function updateGlobeRotation() {
+      const galaxyContainer = document.getElementById('galaxyContainer');
+      galaxyContainer.style.transform = `
+        rotateX(${globeRotation.x}deg)
+        rotateY(${globeRotation.y}deg)
+      `;
+    }
+
+    function positionProfilesOnSphere() {
+      const globeSphere = document.getElementById('globeSphere');
+      const radius = 150; // Raio da esfera
+      const numPoints = profiles.length;
+      
+      // Algoritmo de esfera de Fibonacci para distribuição uniforme
+      for (let i = 0; i < numPoints; i++) {
+        const profile = profiles[i];
+        const y = 1 - (i / (numPoints - 1)) * 2; // y ∈ [-1, 1]
+        const radiusAtY = Math.sqrt(1 - y * y) * radius;
+        
+        const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+        const theta = goldenAngle * i;
+        
+        const x = Math.cos(theta) * radiusAtY;
+        const z = Math.sin(theta) * radiusAtY;
+        
+        const point = document.createElement('div');
+        point.className = 'profile-point';
+        point.innerHTML = `<img src="${profile.image}" alt="${profile.name}" />`;
+        
+        // Posicionar no espaço 3D
+        point.style.transform = `translate3d(${x}px, ${y * radius}px, ${z}px)`;
+        
+        // Evento de clique para mostrar detalhes
+        point.addEventListener('click', (e) => {
+          e.stopPropagation();
+          showProfileDetails(profile);
+        });
+        
+        globeSphere.appendChild(point);
+      }
+    }
+
+    function toggleAutoRotation() {
+      if (isAutoRotating) {
+        stopAutoRotation();
+      } else {
+        startAutoRotation();
+      }
+    }
+
+    function startAutoRotation() {
+      if (isAutoRotating) return;
+      isAutoRotating = true;
+      autoRotateInterval = setInterval(() => {
+        if (!isDragging) {
+          globeRotation.y += 0.5;
+          updateGlobeRotation();
+        }
+      }, 30);
+    }
+
+    function stopAutoRotation() {
+      clearInterval(autoRotateInterval);
+      isAutoRotating = false;
+    }
+
+    function resetGlobeRotation() {
+      globeRotation = { x: 0, y: 0 };
+      updateGlobeRotation();
+    }
+
+    function openGalaxyViewer() {
+      const galaxyViewer = document.getElementById('galaxyViewer');
+      const globeSphere = document.getElementById('globeSphere');
+      
+      // Resetar rotação
+      globeRotation = { x: 0, y: 0 };
+      updateGlobeRotation();
+      
+      // Limpar pontos existentes
+      globeSphere.innerHTML = '';
+      
+      // Posicionar perfis na esfera
+      positionProfilesOnSphere();
+      
+      galaxyViewer.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+      
+      // Iniciar rotação automática
+      startAutoRotation();
+    }
+
+    function closeGalaxyViewer() {
+      const galaxyViewer = document.getElementById('galaxyViewer');
+      galaxyViewer.style.display = 'none';
+      document.body.style.overflow = '';
+      stopAutoRotation();
+    }
+
+    function showProfileDetails(profile) {
+      const zoomOverlay = document.createElement('div');
+      zoomOverlay.className = 'zoom-overlay';
+      zoomOverlay.setAttribute('aria-label', 'Visualização ampliada do perfil');
+      
+      const profileCard = document.createElement('div');
+      profileCard.className = 'card zoomed-card';
+      profileCard.innerHTML = `
+        <button class="inspect-btn" onclick="this.parentElement.parentElement.remove(); document.body.style.overflow = '';" 
+                style="position: absolute; top: 15px; right: 15px;" aria-label="Fechar visualização ampliada">
+          <i class="fas fa-times"></i>
+        </button>
+        <img src="${profile.image}" alt="Foto de perfil de ${profile.name}" />
+        <h2>${profile.name} <span class="estrela">✧</span></h2>
+        <p>${profile.bio}</p>
+        <div class="icons">
+          ${profile.links.map(link => `
+            <a href="${link.url}" target="_blank" aria-label="${link.type} de ${profile.name}" class="tooltip">
+              <i class="${link.icon}"></i>
+              <span class="tooltiptext">${link.type.charAt(0).toUpperCase() + link.type.slice(1)}</span>
+            </a>
+          `).join('')}
+        </div>
+      `;
+      
+      zoomOverlay.appendChild(profileCard);
+      document.body.appendChild(zoomOverlay);
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Funções para zoom dos cards
+    function zoomCard(card) {
+      const overlay = document.createElement('div');
+      overlay.className = 'zoom-overlay';
+      overlay.setAttribute('aria-label', 'Visualização ampliada do perfil');
+      
+      const clonedCard = card.cloneNode(true);
+      clonedCard.classList.add('zoomed-card');
+      clonedCard.querySelector('.inspect-btn').remove();
+      
+      const closeBtn = document.createElement('button');
+      closeBtn.innerHTML = '<i class="fas fa-times"></i>';
+      closeBtn.className = 'inspect-btn';
+      closeBtn.style.position = 'absolute';
+      closeBtn.style.top = '15px';
+      closeBtn.style.right = '15px';
+      closeBtn.setAttribute('aria-label', 'Fechar visualização ampliada');
+      closeBtn.onclick = function() {
+        overlay.remove();
+        document.body.style.overflow = '';
+      };
+      
+      clonedCard.appendChild(closeBtn);
+      overlay.appendChild(clonedCard);
+      document.body.appendChild(overlay);
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Funções para o sistema de áudio
+    function setupAudioControls() {
+      const audio = document.getElementById('audio');
+      const audioControls = document.getElementById('audioControls');
+      const playPauseBtn = document.getElementById('playPauseBtn');
+      const volumeSlider = document.getElementById('volumeSlider');
+
+      audio.volume = volumeSlider.value;
+      
+      playPauseBtn.addEventListener('click', function() {
+        if (audio.paused) {
+          audio.play();
+          playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+          playPauseBtn.setAttribute('aria-label', 'Pausar música');
+        } else {
+          audio.pause();
+          playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+          playPauseBtn.setAttribute('aria-label', 'Tocar música');
+        }
+      });
+      
+      volumeSlider.addEventListener('input', function() {
+        audio.volume = this.value;
+      });
+      
+      audioControls.style.display = 'flex';
+    }
+
+    // Função para entrar no site
+    function entrar() {
+      const btn = document.getElementById('enterBtn');
+      btn.style.transform = 'scale(0.9)';
+      setTimeout(() => {
+        btn.style.transform = 'scale(1.1)';
+      }, 100);
+
+      document.getElementById('loader').classList.add('active');
+
+      setTimeout(function() {
+        document.getElementById('confirmacao').style.display = 'none';
+        document.getElementById('site').style.display = 'flex';
+        document.getElementById('loader').classList.remove('active');
+
+        const audio = document.getElementById('audio');
+        if (audio) {
+            const playPromise = audio.play();
+
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                  console.warn("Autoplay do áudio bloqueado pelo navegador.", error);
+                  const audioButton = document.createElement('button');
+                  audioButton.textContent = 'Ativar Som';
+                  audioButton.style.position = 'fixed';
+                  audioButton.style.bottom = '90px';
+                  audioButton.style.right = '30px';
+                  audioButton.style.padding = '10px 15px';
+                  audioButton.style.borderRadius = '20px';
+                  audioButton.style.background = 'rgba(255,255,255,0.2)';
+                  audioButton.style.color = 'white';
+                  audioButton.style.border = '1px solid rgba(255,255,255,0.3)';
+                  audioButton.style.cursor = 'pointer';
+                  audioButton.style.transition = 'all 0.3s ease';
+                  audioButton.style.zIndex = '101';
+                  audioButton.setAttribute('aria-label', 'Ativar som do site');
+
+                  audioButton.addEventListener('mouseenter', () => {
+                      audioButton.style.background = 'rgba(255,255,255,0.3)';
+                      audioButton.style.transform = 'translateY(-2px)';
+                  });
+
+                  audioButton.addEventListener('mouseleave', () => {
+                      audioButton.style.background = 'rgba(255,255,255,0.2)';
+                      audioButton.style.transform = 'translateY(0)';
+                  });
+
+                  audioButton.addEventListener('click', () => {
+                      audio.play();
+                      audioButton.style.transform = 'scale(0.9)';
+                      setTimeout(() => {
+                        audioButton.style.opacity = '0';
+                        setTimeout(() => {
+                            audioButton.remove();
+                        }, 300);
+                      }, 200);
+                  });
+
+                  document.body.appendChild(audioButton);
+                });
+            }
+        }
+      }, 1500);
+    }
+
+    // Função para o botão "Voltar ao topo"
+    function setupBackToTop() {
+      const backToTopButton = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      });
+
+      backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+
+    // Efeito de ripple ao clicar
+    function setupRippleEffect() {
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('button, a')) {
+            return;
+        }
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        const rect = document.body.getBoundingClientRect();
+        ripple.style.left = `${e.clientX - rect.left}px`;
+        ripple.style.top = `${e.clientY - rect.top}px`;
+        document.body.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
+      });
+    }
+
+    // Bloquear funções do teclado
+    function setupKeyboardBlock() {
+      document.addEventListener('keydown', function(e) {
+        const blockedKeys = [123]; // F12
+        const blockedCtrlShift = [73, 74, 85]; // I, J, U
+        if (blockedKeys.includes(e.keyCode) ||
+            (e.ctrlKey && e.shiftKey && blockedCtrlShift.includes(e.keyCode)) ||
+            (e.ctrlKey && e.keyCode === 85)) {
+          e.preventDefault();
+        }
+      });
+    }
+
+    // Efeito parallax
+    function setupParallaxEffect() {
+      window.addEventListener('scroll', function() {
+          const scrollPosition = window.pageYOffset;
+          const cards = document.querySelectorAll('.card');
+
+          cards.forEach((card, index) => {
+              if (!card.matches(':hover')) {
+                  const speed = 0.05 + (index * 0.02);
+                  card.style.transform = `translateY(${scrollPosition * speed}px)`;
+              }
+          });
+      });
+    }
+
+    // Carregamento de imagens
+    document.querySelectorAll('img').forEach(img => {
+      if (!img.complete) {
+        img.classList.add('loading');
+      }
+      img.onload = function() {
+        this.classList.remove('loading');
+      };
+      img.onerror = function() {
+        this.classList.remove('loading');
+        this.alt = 'Imagem não carregada';
+      };
+    });
+  </script>
+</body>
+</html>
