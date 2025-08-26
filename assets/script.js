@@ -14,7 +14,7 @@
         id: 2,
         name: "9",
         image: "assets/profiles/chapado.png",
-        bio: "Y + P 💝",
+        bio: "luto",
         links: [
           { type: "instagram", icon: "fab fa-instagram", url: "https://instagram.com/j.pedroozl" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/joojjpedrooz" }
@@ -24,7 +24,7 @@
         id: 3,
         name: "nezay",
         image: "assets/profiles/nezay.png",
-        bio: "soninho bobo",
+        bio: "🔪",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/187902749113974785" },
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
