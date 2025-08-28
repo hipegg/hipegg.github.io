@@ -32,8 +32,8 @@
         {
         id: 4,
         name: "t4fz",
-        image: "assets/profiles/hipe.png",
-        bio: "oi",
+        image: "assets/profiles/tafz.png",
+        bio: "oi fofa!",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i6w" }
