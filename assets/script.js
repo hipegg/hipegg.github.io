@@ -134,6 +134,12 @@ function setupAudioControls() {
 
   audio.volume = volumeSlider.value;
 
+  // 🔥 Forçar autoplay
+  audio.muted = false;
+  audio.play().catch(() => {
+    console.log("⚠️ Autoplay bloqueado pelo navegador, precisa clicar no botão play.");
+  });
+
   playPauseBtn.addEventListener('click', () => {
     if (audio.paused) {
       audio.play();
@@ -156,6 +162,12 @@ function entrar() {
     document.getElementById('confirmacao').style.display = 'none';
     document.getElementById('site').style.display = 'flex';
     document.getElementById('loader').classList.remove('active');
+
+    // 🎶 Toca a música automaticamente ao entrar
+    const audio = document.getElementById('audio');
+    audio.play().catch(() => {
+      console.log("⚠️ O navegador bloqueou o autoplay.");
+    });
   }, 1500);
 }
 
