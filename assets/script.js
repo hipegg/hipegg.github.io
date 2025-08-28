@@ -28,7 +28,16 @@
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
         ]
-      }
+      },
+        {
+        id: 4,
+        name: "'Bya",
+        image: "assets/profiles/bya.png",
+        bio: "",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1238887334989004820" },
+        ]
+    }
     ];
     // Inicialização
     document.addEventListener('DOMContentLoaded', function() {
