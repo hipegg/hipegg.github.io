@@ -11,10 +11,9 @@
   <meta property="og:description" content="Perfil de um monte de fracassado">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://example.com/path-to-image.jpg">
-
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body oncontextmenu="return false">
+<body>
   <div class="loader" id="loader">
     <div class="spinner"></div>
     <p>CARREGANDO...</p>
@@ -22,13 +21,12 @@
 
   <section id="confirmacao">
     <h1 class="typing-effect">BEM-VINDO</h1>
-    <button onclick="entrar()" id="enterBtn" aria-label="Entrar no site">ENTRAR</button>
-    <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;"></p>
+    <button id="enterBtn" aria-label="Entrar no site">ENTRAR</button>
   </section>
 
   <main id="site">
     <audio id="audio" loop src="musica.mp3"></audio>
-    <div class="audio-controls" id="audioControls" style="display: none;">
+    <div class="audio-controls" id="audioControls">
       <button class="audio-btn" id="playPauseBtn" aria-label="Play/Pause música">
         <i class="fas fa-play"></i>
       </button>
@@ -37,7 +35,7 @@
     
     <section class="cards-wrapper">
       <div class="container" id="profilesContainer">
-        <!-- Perfis serão carregados dinamicamente aqui -->
+        <!-- Perfis carregados dinamicamente -->
       </div>
     </section>
 
@@ -46,6 +44,7 @@
       <p>Site em construção... em breve terá atualizações.</p>
     </footer>
   </main>
+
   <div class="back-to-top" id="backToTop">
     <i class="fas fa-arrow-up"></i>
   </div>
