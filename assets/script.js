@@ -1,14 +1,14 @@
     let profiles = JSON.parse(localStorage.getItem('profiles')) || [
       {
         id: 1,
-        name: "hipe",
-        image: "assets/profiles/tafz.png",
-        bio: "oi",
+        name: "isi yumi",
+        image: "assets/profiles/isi.png",
+        bio: "mãe de 2",
         links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
-          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i6w" }
-        ]
-      },
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/744028617025257564" },
+          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/vitimizaram/" },
+         ]
+        },
       {
         id: 2,
         name: "rei",
@@ -30,17 +30,17 @@
         ]
       },
         {
-        id: 5,
-        name: "isi yumi",
-        image: "assets/profiles/isi.png",
-        bio: "mãe de 2",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/744028617025257564" },
-          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/vitimizaram/" },
-         ]
-        },
-        {
         id: 4,
+        name: "t4fz",
+        image: "assets/profiles/tafz.png",
+        bio: ".gg/medo",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i6w" }
+        ]
+      },
+        {
+        id: 5,
         name: "pecinha",
         image: "assets/profiles/pecinha.png",
         bio: "444",
