@@ -33,7 +33,7 @@
         id: 4,
         name: "pecinha",
         image: "assets/profiles/pecinha.png",
-        bio: "",
+        bio: "444",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1345869146134544517" },
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/farmoputa/" },
