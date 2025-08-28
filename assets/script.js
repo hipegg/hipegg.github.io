@@ -30,16 +30,6 @@
         ]
       },
         {
-        id: 4,
-        name: "pecinha",
-        image: "assets/profiles/pecinha.png",
-        bio: "444",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1345869146134544517" },
-          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/farmoputa/" },
-        ]
-        },
-        {
         id: 5,
         name: "isi yumi",
         image: "assets/profiles/isi.png",
@@ -47,6 +37,16 @@
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/744028617025257564" },
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/vitimizaram/" },
+         ]
+        },
+        {
+        id: 4,
+        name: "pecinha",
+        image: "assets/profiles/pecinha.png",
+        bio: "444",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1345869146134544517" },
+          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/farmoputa/" },
         ]
         },
         {
