@@ -30,6 +30,15 @@
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
         ]
       }
+        {
+        id: 4,
+        name: "rei",
+        image: "assets/profiles/reidocapa.png",
+        bio: "EX DA ABRIMEUCRANIO",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/721561972797210697" },
+        ]
+    }
     ];
     // Inicialização
     document.addEventListener('DOMContentLoaded', function() {
