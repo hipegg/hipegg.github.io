@@ -29,7 +29,7 @@
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
         ]
-      }
+      },
         {
         id: 4,
         name: "rei",
