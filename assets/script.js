@@ -57,26 +57,7 @@
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1238887334989004820" },
         ]
-    },
-    {
-        id: 7,
-        name: "abrimeucranio",
-        image: "assets/profiles/bel.png",
-        bio: "",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1394016722343956520" },
-          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/oinbel/" },
-        ]
-    },
-        {
-        id: 8,
-        name: "sasa",
-        image: "assets/profiles/sasa.png",
-        bio: "₍ᐢ.ˬ.ᐢ₎",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1393929964319150214" },
-        ]
-        }
+    }
     ];
     // Inicialização
     document.addEventListener('DOMContentLoaded', function() {
