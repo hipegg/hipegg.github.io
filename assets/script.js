@@ -1,7 +1,7 @@
     let profiles = JSON.parse(localStorage.getItem('profiles')) || [
       {
         id: 1,
-        name: "isi yimi",
+        name: "isi yumi",
         image: "assets/profiles/isi.png",
         bio: "mãe de 2",
         links: [
