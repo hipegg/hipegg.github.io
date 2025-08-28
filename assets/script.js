@@ -11,12 +11,11 @@
       },
       {
         id: 2,
-        name: "9",
-        image: "assets/profiles/chapado.png",
-        bio: "luto chapado",
+        name: "rei",
+        image: "assets/profiles/reidocapa.png",
+        bio: "respeita o cv",
         links: [
-          { type: "instagram", icon: "fab fa-instagram", url: "https://instagram.com/j.pedroozl" },
-          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/joojjpedrooz" }
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/721561972797210697" }
         ]
       },
       {
@@ -29,16 +28,7 @@
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
         ]
-      },
-        {
-        id: 4,
-        name: "rei",
-        image: "assets/profiles/reidocapa.png",
-        bio: "EX DA ABRIMEUCRANIO",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/721561972797210697" },
-        ]
-    }
+      }
     ];
     // Inicialização
     document.addEventListener('DOMContentLoaded', function() {
