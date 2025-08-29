@@ -57,7 +57,18 @@
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1238887334989004820" },
         ]
-    }
+    },
+        {
+        id: 7,
+        name: "curse",
+        image: "assets/profiles/curse.png",
+        bio: "777",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/781897575501922404" },
+          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/doit4lust/" },
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/doit4lust" }
+        ]
+      }
     ];
     // Inicialização
     document.addEventListener('DOMContentLoaded', function() {
