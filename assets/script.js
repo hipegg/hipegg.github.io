@@ -61,7 +61,7 @@
         {
         id: 7,
         name: "curse",
-        image: "assets/profiles/curse.png",
+        image: "assets/profiles/curse.jpg",
         bio: "777",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/781897575501922404" },
