@@ -50,15 +50,6 @@
         ]
         },
         {
-        id: 6,
-        name: "'Bya",
-        image: "assets/profiles/bya.png",
-        bio: "",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1238887334989004820" },
-        ]
-    },
-        {
         id: 7,
         name: "curse",
         image: "assets/profiles/curse.jpg",
