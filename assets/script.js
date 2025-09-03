@@ -52,7 +52,7 @@
         {
         id: 6,
         name: "sasa",
-        image: "assets/profiles/sasa.jpg",
+        image: "assets/profiles/sasa.jpeg",
         bio: "🩰𓈒⋆⑅˚₊୨୧",
         links: [
          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1393929964319150214" },
