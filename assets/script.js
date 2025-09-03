@@ -50,6 +50,16 @@
         ]
         },
         {
+        id: 6,
+        name: "sasa",
+        image: "assets/profiles/sasa.jpg",
+        bio: "🩰𓈒⋆⑅˚₊୨୧",
+        links: [
+         { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1393929964319150214" },
+         { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/2jjwb_/" }, 
+        ]
+      },
+        {
         id: 7,
         name: "curse",
         image: "assets/profiles/curse.jpg",
