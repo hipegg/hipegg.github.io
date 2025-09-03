@@ -51,6 +51,15 @@
         },
         {
         id: 6,
+        name: "laina",
+        image: "assets/profiles/laina.jpg",
+        bio: "desculpa mãe",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1186348658904547349" }
+        ]
+      },
+        {
+        id: 7,
         name: "sasa",
         image: "assets/profiles/sasa.jpeg",
         bio: "🩰𓈒⋆⑅˚₊୨୧",
@@ -60,7 +69,7 @@
         ]
       },
         {
-        id: 7,
+        id: 8,
         name: "curse",
         image: "assets/profiles/curse.jpg",
         bio: "777",
