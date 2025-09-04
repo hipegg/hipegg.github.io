@@ -1,16 +1,6 @@
     let profiles = JSON.parse(localStorage.getItem('profiles')) || [
       {
         id: 1,
-        name: "peu",
-        image: "assets/profiles/peu.webp",
-        bio: "crypto enthusiast",
-        links: [
-         { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1393437691760349294" },
-         { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/oiamr/" }, 
-        ]
-      },
-      {
-        id: 2,
         name: "isi yumi",
         image: "assets/profiles/isi.png",
         bio: "mãe de 2",
@@ -20,7 +10,7 @@
         ]
       },
       {
-        id: 3,
+        id: 2,
         name: "nezay",
         image: "assets/profiles/nezay.png",
         bio: "🔪",
@@ -31,7 +21,7 @@
         ]
       },
       {
-        id: 4,
+        id: 3,
         name: "rei",
         image: "assets/profiles/reidocapa.png",
         bio: "respeita o cv",
@@ -40,17 +30,17 @@
         ]
       },
         {
-        id: 5,
+        id: 4,
         name: "t4fz",
         image: "assets/profiles/tafz.png",
-        bio: "oi fofa!",
+        bio: "aaaaaaaaaaaaaa",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i6w" }
          ]
         },
         {
-        id: 6,
+        id: 5,
         name: "pecinha",
         image: "assets/profiles/pecinha.png",
         bio: "444",
@@ -60,7 +50,7 @@
         ]
         },
         {
-        id: 7,
+        id: 6,
         name: "laina",
         image: "assets/profiles/laina.jpg",
         bio: "desculpa mãe",
@@ -69,7 +59,7 @@
         ]
       },
         {
-        id: 8,
+        id: 7,
         name: "sasa",
         image: "assets/profiles/sasa.jpeg",
         bio: "🩰𓈒⋆⑅˚₊୨୧",
@@ -79,7 +69,7 @@
         ]
       },
         {
-        id: 9,
+        id: 8,
         name: "curse",
         image: "assets/profiles/curse.jpg",
         bio: "777",
