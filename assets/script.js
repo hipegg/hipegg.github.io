@@ -1,6 +1,16 @@
     let profiles = JSON.parse(localStorage.getItem('profiles')) || [
       {
         id: 1,
+        name: "peu",
+        image: "assets/profiles/peu.webp",
+        bio: "crypto enthusiast",
+        links: [
+         { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1393437691760349294" },
+         { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/oiamr/" }, 
+        ]
+      },
+      {
+        id: 2,
         name: "isi yumi",
         image: "assets/profiles/isi.png",
         bio: "mãe de 2",
@@ -10,23 +20,12 @@
         ]
       },
       {
-        id: 2,
+        id: 3,
         name: "rei",
         image: "assets/profiles/reidocapa.png",
         bio: "respeita o cv",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/721561972797210697" }
-        ]
-      },
-      {
-        id: 3,
-        name: "nezay",
-        image: "assets/profiles/nezay.png",
-        bio: "🔪",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/187902749113974785" },
-          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
-          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
         ]
       },
         {
