@@ -21,6 +21,17 @@
       },
       {
         id: 3,
+        name: "nezay",
+        image: "assets/profiles/nezay.png",
+        bio: "🔪",
+        links: [
+          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/187902749113974785" },
+          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
+        ]
+      },
+      {
+        id: 4,
         name: "rei",
         image: "assets/profiles/reidocapa.png",
         bio: "respeita o cv",
@@ -29,7 +40,7 @@
         ]
       },
         {
-        id: 4,
+        id: 5,
         name: "t4fz",
         image: "assets/profiles/tafz.png",
         bio: "oi fofa!",
@@ -39,7 +50,7 @@
          ]
         },
         {
-        id: 5,
+        id: 6,
         name: "pecinha",
         image: "assets/profiles/pecinha.png",
         bio: "444",
@@ -49,7 +60,7 @@
         ]
         },
         {
-        id: 6,
+        id: 7,
         name: "laina",
         image: "assets/profiles/laina.jpg",
         bio: "desculpa mãe",
@@ -58,7 +69,7 @@
         ]
       },
         {
-        id: 7,
+        id: 8,
         name: "sasa",
         image: "assets/profiles/sasa.jpeg",
         bio: "🩰𓈒⋆⑅˚₊୨୧",
@@ -68,7 +79,7 @@
         ]
       },
         {
-        id: 8,
+        id: 9,
         name: "curse",
         image: "assets/profiles/curse.jpg",
         bio: "777",
