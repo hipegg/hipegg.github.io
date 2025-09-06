@@ -5,6 +5,21 @@
       padding: 0;
     }
 
+/* Fundo animado */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("fundo.gif") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1; /* Mantém o fundo atrás de tudo */
+}
+
+
+
     html, body {
       height: 100%;
       background: #000;
@@ -875,38 +890,4 @@
 
       .back-to-top {
         width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-      }
-
-      .zoomed-card {
-        width: 95%;
-        padding: 15px;
-      }
-
-      .audio-controls {
-        padding: 8px 12px;
-        right: 15px;
-      }
-
-      .volume-slider {
-        width: 60px;
-      }
-
-      .globe-sphere {
-        width: 200px;
-        height: 200px;
-      }
-
-      .profile-point {
-        width: 60px;
-        height: 60px;
-      }
-
-      .profile-point img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-  
+     
