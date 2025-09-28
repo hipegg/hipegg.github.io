@@ -21,9 +21,9 @@
       },
         {
         id: 3,
-        name: "t4fz",
+        name: "hipe",
         image: "assets/profiles/tafz.png",
-        bio: "aaaaaaaaaaaaaa",
+        bio: "1️⃣4️⃣",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i6w" }
