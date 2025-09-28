@@ -1,16 +1,6 @@
     let profiles = JSON.parse(localStorage.getItem('profiles')) || [
       {
         id: 1,
-        name: "isi yumi",
-        image: "assets/profiles/isi.png",
-        bio: "mãe de 2",
-        links: [
-         { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/744028617025257564" },
-         { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/vitimizaram/" }, 
-        ]
-      },
-      {
-        id: 2,
         name: "nezay",
         image: "assets/profiles/nezay.png",
         bio: "🔪",
@@ -21,7 +11,7 @@
         ]
       },
       {
-        id: 3,
+        id: 2,
         name: "rei",
         image: "assets/profiles/reidocapa.png",
         bio: "respeita o cv",
@@ -30,7 +20,7 @@
         ]
       },
         {
-        id: 4,
+        id: 3,
         name: "t4fz",
         image: "assets/profiles/tafz.png",
         bio: "aaaaaaaaaaaaaa",
@@ -40,43 +30,12 @@
          ]
         },
         {
-        id: 5,
-        name: "pecinha",
-        image: "assets/profiles/pecinha.png",
-        bio: "444",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1345869146134544517" },
-          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/farmoputa/" },
-        ]
-        },
-        {
-        id: 6,
+        id: 4,
         name: "laina",
         image: "assets/profiles/laina.jpg",
         bio: "desculpa mãe",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1186348658904547349" }
-        ]
-      },
-        {
-        id: 7,
-        name: "sasa",
-        image: "assets/profiles/sasa.jpeg",
-        bio: "🩰𓈒⋆⑅˚₊୨୧",
-        links: [
-         { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1393929964319150214" },
-         { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/2jjwb_/" }, 
-        ]
-      },
-        {
-        id: 8,
-        name: "curse",
-        image: "assets/profiles/curse.jpg",
-        bio: "777",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/781897575501922404" },
-          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/doit4lust/" },
-          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/doit4lust" }
         ]
       }
     ];
