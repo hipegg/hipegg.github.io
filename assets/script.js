@@ -23,10 +23,10 @@
         id: 3,
         name: "hipe",
         image: "assets/profiles/tafz.png",
-        bio: "1️⃣4️⃣",
+        bio: "1️a",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
-          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i6w" }
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i1h" }
          ]
         },
         {
