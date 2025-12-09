@@ -13,7 +13,7 @@
         {
         id: 3,
         name: "hipe",
-        image: "assets/profiles/tafz.png",
+        image: "assets/profiles/hipe.jpg",
         bio: "",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
