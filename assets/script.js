@@ -10,15 +10,6 @@
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
         ]
       },
-      {
-        id: 2,
-        name: "rei",
-        image: "assets/profiles/reidocapa.png",
-        bio: "respeita o cv",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/721561972797210697" }
-        ]
-      },
         {
         id: 3,
         name: "hipe",
@@ -28,15 +19,6 @@
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i1h" }
          ]
-        },
-        {
-        id: 4,
-        name: "laina",
-        image: "assets/profiles/laina.jpg",
-        bio: "desculpa mãe",
-        links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/1186348658904547349" }
-        ]
       }
     ];
     // Inicialização
