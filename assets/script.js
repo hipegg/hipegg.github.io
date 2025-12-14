@@ -11,9 +11,9 @@
         ]
       },
         {
-        id: 3,
-        name: "hipe",
-        image: "assets/profiles/hipe.jpg",
+        id: 2,
+        name: "dkn",
+        image: "assets/profiles/a8a252481acb5c8e39e2e4f685aabaf0.webp",
         bio: "",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
