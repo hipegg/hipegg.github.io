@@ -12,7 +12,7 @@
       },
         {
         id: 2,
-        name: "dkn",
+        name: "t4fz",
         image: "assets/profiles/dkn.webp",
         bio: "",
         links: [
