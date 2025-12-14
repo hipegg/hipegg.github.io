@@ -2,7 +2,7 @@
       {
         id: 1,
         name: "nezay",
-        image: "assets/profiles/nezay.png",
+        image: "assets/profiles/Naz.webp",
         bio: "🔪",
         links: [
           { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/187902749113974785" },
