@@ -19,7 +19,7 @@
     { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
     { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i1h" },
     { type: "reddit", icon: "fab fa-reddit", url: "https://reddit.com/u/50uu" },
-    { type: "roblox", icon: "fas fa-cube", url: "https://www.roblox.com/pt/users/193415707/profile" },
+    { type: "roblox", icon: "text", label: "R", url: "https://www.roblox.com/pt/users/193415707/profile" },
     { type: "vndb", icon: "fas fa-database", url: "https://vndb.org/u328201" }
          ]
       }
