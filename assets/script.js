@@ -16,7 +16,10 @@
         image: "assets/profiles/dkn.webp",
         bio: "",
         links: [
-         
+            { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/385931079606992911" },
+          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/i1h" },
+          { type: "reddit", icon: "fab fa-reddit", url: "https://reddit.com/u/50uu" },
+        { type: "roblox", icon: "fas fa-gamepad", url: "https://www.roblox.com/pt/users/193415707/profile" }
          ]
       }
     ];
