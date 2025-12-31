@@ -21,6 +21,14 @@
             { type: "reddit", icon: "fab fa-reddit", url: "https://reddit.com/u/50uu" },
             { type: "roblox", icon: "fas fa-cube", url: "https://www.roblox.com/pt/users/193415707/profile" },
             { type: "vndb", icon: "fas fa-database", url: "https://vndb.org/u328201" }
+},
+        {
+        id: 3,
+        name: "pure love aristocat",
+        image: "assets/profiles/chapado.webp",
+        bio: "",
+        links: [
+            { type: "vndb", icon: "fas fa-database", url: "https://vndb.org/u325285" }
          ]
       }
     ];
