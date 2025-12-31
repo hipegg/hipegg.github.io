@@ -31,7 +31,7 @@
             { type: "vndb", icon: "fas fa-database", url: "https://vndb.org/u325285" }
          ]
       }
-    ];
+    ]
     // Inicialização
     document.addEventListener('DOMContentLoaded', function() {
       updateProfileCards();
