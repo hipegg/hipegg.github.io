@@ -5,7 +5,6 @@
         image: "assets/profiles/Naz.webp",
         bio: "🔪",
         links: [
-          { type: "discord", icon: "fab fa-discord", url: "https://discord.com/users/187902749113974785" },
           { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
           { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
         ]
