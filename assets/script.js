@@ -13,7 +13,7 @@
         id: 2,
         name: " ",
         image: "assets/profiles/dkn.webp",
-        bio: "@fwlta tg",
+        bio: "oi sla",
         links: [
         { type: "telegram", icon: "fab fa-telegram", url: "https://t.me" } 
          ]
