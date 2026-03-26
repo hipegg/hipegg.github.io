@@ -17,15 +17,6 @@
         links: [
         { type: "telegram", icon: "fab fa-telegram", url: "https://t.me" } 
          ]
-      },
-        {
-        id: 3,
-        name: "pure love aristocat",
-        image: "assets/profiles/chapado.webp",
-        bio: "vn enjoyer",
-        links: [
-            { type: "vndb", icon: "fas fa-database", url: "https://vndb.org/u325285" }
-         ]
       }
     ];
     // Inicialização
