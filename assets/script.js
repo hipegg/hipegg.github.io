@@ -11,7 +11,7 @@
       },
         {
         id: 2,
-        name: " ",
+        name: "fwlta",
         image: "assets/profiles/dkn.webp",
         bio: "oi",
         links: [
