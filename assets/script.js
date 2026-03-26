@@ -11,9 +11,9 @@
       },
         {
         id: 2,
-        name: "t4fz",
+        name: " ",
         image: "assets/profiles/dkn.webp",
-        bio: "",
+        bio: "@fwlta tg",
         links: [
         
          ]
