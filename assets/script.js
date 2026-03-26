@@ -1,14 +1,4 @@
     let profiles = JSON.parse(localStorage.getItem('profiles')) || [
-      {
-        id: 1,
-        name: "nezay",
-        image: "assets/profiles/Naz.webp",
-        bio: "🔪",
-        links: [
-          { type: "instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/nnnezay/" },
-          { type: "lastfm", icon: "fab fa-lastfm", url: "https://last.fm/user/nezaay" }
-        ]
-      },
         {
         id: 2,
         name: "fwlta",
