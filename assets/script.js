@@ -15,7 +15,7 @@
         image: "assets/profiles/dkn.webp",
         bio: "@fwlta tg",
         links: [
-        
+        { type: "telegram", icon: "fab fa-telegram", url: "https://t.me" } 
          ]
       },
         {
