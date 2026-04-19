@@ -3,7 +3,7 @@
         id: 2,
         name: "fwlta",
         image: "assets/profiles/dkn.webp",
-        bio: "oi",
+        bio: "",
         links: [
         { type: "telegram", icon: "fab fa-telegram", url: "https://t.me" } 
          ]
